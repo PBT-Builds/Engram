@@ -1,0 +1,12 @@
+{
+  "package": "ai_srs",
+  "name": "Engram",
+  "description": "AI-generated spaced-repetition cards — contextual sentences for languages, related questions for any subject — on top of Anki's FSRS, without touching your original decks.",
+  "human_version": "1.0.0",
+  "homepage": "https://github.com/PBT-Builds/Engram",
+  "author": "pbt-builds",
+  "conflicts": [],
+  "mod": 0,
+  "min_point_version": 231000,
+  "max_point_version": 0
+}

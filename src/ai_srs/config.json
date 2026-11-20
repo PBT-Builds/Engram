@@ -1,0 +1,71 @@
+{
+  "providers": {
+    "local": {
+      "api_format": "openai",
+      "api_base": "http://localhost:11434/v1",
+      "api_key": ""
+    },
+    "claude": {
+      "api_format": "anthropic",
+      "api_base": "https://api.anthropic.com/v1",
+      "api_key": "",
+      "api_key_env": "ANTHROPIC_API_KEY",
+      "model": "claude-haiku-4-5-20251001"
+    }
+  },
+  "default_provider": "local",
+  "models_by_subject": {
+    "Japanese": "qwen2.5:7b",
+    "Chinese": "qwen2.5:7b",
+    "Korean": "qwen2.5:7b",
+    "German": "qwen2.5:7b",
+    "Spanish": "qwen2.5:7b",
+    "French": "qwen2.5:7b",
+    "English": "qwen2.5:7b",
+    "History": "qwen2.5:7b",
+    "Chemistry": "qwen2.5:7b",
+    "Physics": "qwen2.5:7b",
+    "Biology": "qwen2.5:7b",
+    "default": "qwen2.5:7b"
+  },
+  "subjects": [
+    "Japanese",
+    "Chinese",
+    "Korean",
+    "German",
+    "Spanish",
+    "French",
+    "English",
+    "History",
+    "Chemistry",
+    "Physics",
+    "Biology"
+  ],
+  "card_types_by_subject": {
+    "Japanese": "language",
+    "Chinese": "language",
+    "Korean": "language",
+    "German": "language",
+    "Spanish": "language",
+    "French": "language",
+    "English": "language",
+    "History": "knowledge",
+    "Chemistry": "knowledge",
+    "Physics": "knowledge",
+    "Biology": "knowledge"
+  },
+  "default_card_type": "language",
+  "temperature": 0.3,
+  "words_per_sentence": 1,
+  "learned_retrievability": 0.90,
+  "recycle_graduation": 3,
+  "demotion_fails": 3,
+  "demotion_mode": "consecutive",
+  "validation_retries": 2,
+  "trigger_tag": "ai-srs",
+  "request_timeout_seconds": 60,
+  "word_field": null,
+  "extraction_provider": "claude",
+  "extraction_model": "",
+  "max_cards_per_note": 15
+}

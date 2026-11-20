@@ -1,0 +1,42 @@
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.venv/
+venv/
+env/
+
+# IDE / editor
+.vscode/
+.idea/
+.history/
+*.swp
+*.swo
+
+# Anki runtime artifacts (created inside the add-on folder by Anki at load time)
+src/ai_srs/meta.json
+src/ai_srs/user_files/
+
+# Sidecar SQLite DB (lives in user_files at runtime, but guard against stray copies)
+*.sqlite
+*.sqlite-journal
+*.db
+
+# Logs
+*.log
+
+# Build output (.ankiaddon packages produced by scripts/build_ankiaddon.sh)
+dist/
+
+# Local tooling and settings (never published)
+.claude/
+*.local.json
+.env
